@@ -1,3 +1,16 @@
-c <- 2+2
-usethis::create_github_token()
-gitcreds::gitcreds_set()
+library(sf)
+library(mapview)
+library(dplyr)
+
+
+
+network_fil <- "C:/Users/Waleed/test11/Geo.gpkg"
+
+
+
+network <- st_read(network_fil, crs = 3006)
+
+mapview(network_fil)
+
+mapview(network)
+
